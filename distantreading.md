@@ -8,7 +8,7 @@ title: Distant Reading Project
 
 # Distant Reading Assignment 
 
-| ![Voyant Word Visualization](/DIG3171-Website/Images/voyant.png) |
+| ![Voyant Word Visualization](/Images/voyant.png) |
 | :--------------------------------------------------------------: |
 |                   *Voyant Word Visualization*                    |
 
