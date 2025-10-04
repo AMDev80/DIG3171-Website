@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html>
 	<head>
-<p> <a href="https://ekjphd.github.io/DIG3171/">Home</a>
-<p> This template was copied from <a href="https://iloveepoetry.org/creative/tracery2htmltemplate.html">Leonardo Flores's page</a> and modified for this class.</p>
-  <meta charset="UTF-8">
-  <title>{{ page.title }}</title>
-</head>
+		<h3> 
+			<a href="https://amdev80.github.io/DIG3171-Website/" style="color: #47ff27c6">
+				Back to Welcome Page
+			</a> 
+		</h3>
+  		<meta charset="UTF-8">
+  	<title>Metaverses Tracery</title>
+	</head>
+	
 	<body>
 
 
@@ -28,7 +32,7 @@ THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR I
         font-family: Arial, sans-serif;
         margin: 0;
         padding: 0;
-        background-color: lightseagreen;
+        background-color: rgb(72, 68, 103);
     }
     
     #title-container {
@@ -36,6 +40,8 @@ THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR I
         text-align: center;
         max-height: 300px;
 		font-size: 4em;
+		color: #47ff27c6;
+
     }
     
     @media (max-width: 600px) {
@@ -50,12 +56,12 @@ THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR I
     
     #text-container {
         text-align: center;
-        font-size: 1.5em;
-        color: #431bf7c6;
+        font-size: 2.0em;
+        color: #47ff27c6;
         margin: auto; /* Center horizontally and vertically */
-        border: 0px solid black; /* Change 0px to your desired border thickness, if desired */
+        border: 3px dashed #47ff27c6; /* Change 0px to your desired border thickness, if desired */
         padding: 10px;
-        width: 600px;
+        width: 650px;
     }
 
     /* CSS for buttons and modal */
@@ -92,7 +98,7 @@ THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR I
         padding: 20px;
         border: 1px solid #888;
         width: 80%; /* Could be more or less, depending on screen size */
-        font-size: 2.5em;
+        font-size: 1.5em;
     }
 
     /* The Close Button */
@@ -102,10 +108,18 @@ THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR I
         font-size: 28px;
         font-weight: bold;
     }
+	
+	.works-cited {
+    margin-left: 2em;
+    text-indent: -2em;
+    line-height: 1.5;
+	font-size: 0.8em;
+ 	}
+
 </style>
     </head>
     <body>
-		<div id="title-container">Tracery Fun!</div>
+		<div id="title-container">Metaverse Tracery</div>
 
         <div id="text-container">This engine teach you the basics of Tracery grammar!</div>
 
@@ -118,478 +132,190 @@ THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR I
             <!-- Replace the statement below with your abstract. -->
             <div class="modal-content">
                 <span class="close">×</span>
-                <p> This is my abstract! I wrote a lot of cool things in Word or Google Docs and then pasted it into the code under the comment "Replace the statement below with your abstract" Woo.
-				</p> 
+                <p> 
+					The metaverse, which was originally only a concept of science 
+					fiction described as a virtual reality, separate, but mirroring that 
+					of our own, has undoubtably become more real. With the rapid 
+					development of XR (VR, AR, MR, etc.) technologies, an industry that 
+					has been rising alongside the advancement of AI, there comes a lack 
+					of a design framework for this medium. To prepare for future 
+					applications towards the metaverse, it is important to define the 
+					concepts that encompass the simulated reality: the visual 
+					construction of the virtual world and its exploration via user 
+					input. The virtual reality of the metaverse is designed using 3D 
+					computer graphics and software for building scenes inhabited with 
+					NPCs and player avatars. Furthermore, for this to be possible, users 
+					should be able to perform an array of XR-assisted interactions such 
+					as touching and grabbing, panning, point-and-teleporting, and 
+					walking just to name a few. User actions, their feedback, and 
+					immersion is only a small portion of what there is to consider as XR 
+					grows towards the metaverse.
+				</p>
+				<p class="works-cited">
+					Zhao, Yuheng et. al. "Metaverse: Perspectives from graphics, 
+					interactions and visualization." <em>Visual Informatics</em>,
+					vol. 6, no. 1, 2022, pp. 56-67, https://doi.org/10.1016/j.visinf.2022.03.002. Accessed 28 Sep. 2025.
+				</p>
             </div>
         </div>
     <script> /* In the var immediately below, copy-paste your Tracery/CBDQ JSON between the {} brackets */
     var obj = {
-      
-	"origin": [
-		"The Doctor and his companion #companion# are #touring# #place#. She #reactToPlace# and #hasPlaceProblem#, before accidentally #gettingIntoTrouble#. The Doctor tries to save her, but in the process finds out #terribleSecret#. They #actionBeat# and #actionBeat# and finally #actionBeat#. The Doctor saves the day just in time with #doctorSkill#. The mysterious '#mysteryThing#' is hinted at yet again."
-	],
-	"companion": [
-		"#femaleFirstName# (#companionDesc#)"
-	],
-	"femaleFirstName": [
-		"Alice",
-		"Bernice",
-		"Clarabel",
-		"Margie",
-		"Pearl",
-		"Tina",
-		"Marsha",
-		"Constance",
-		"Lucy",
-		"Rosetta",
-		"Sapphire",
-		"Sky",
-		"Jules",
-		"Eliza",
-		"Nikki",
-		"Octavia",
-		"Jupiter",
-		"Vanity",
-		"Maya"
-	],
-	"companionDesc": [
-		"a young#optAdj# #jobTitle# from #place#"
-	],
-	"jobTitle": [
-		"nanny",
-		"accountant",
-		"housewife",
-		"nurse",
-		"#discipline# student",
-		"thrill-seeker",
-		"athelete",
-		"assassain",
-		"pilot",
-		"ex-soldier",
-		"librarian",
-		"author of the classic novel 'The #evocativeWord# #thrillerWord#'"
-	],
-	"discipline": [
-		"philosophy",
-		"digital humanities",
-		"high-school",
-"game design",
-		"history"
-	],
-	"optAdj": [
-		
-		", gorgeous",
-		", no-nonsense",
-		", beautiful",
-		", shy",
-		", troublemaking",
-		", talented",
-		", winsome",
-		", modern",
-		"#optAdj##optAdj"
-	],
-	"place": [
-		"#timeperiod# #area#",
-		"#area#",
-		"#specialArea#",
-		"#futureArea#"
-	],
-	"timeperiod": [
-		"ancient",
-		"19th century",
-		"war-torn",
-		"early sixties",
-		"1980s",
-		"turn of the century",
-		"present-day",
-		"near-future",
-		"far future",
-		"a parallel",
-		"'50s"
-	],
-	"area": [
-		"England",
-		"Florida",
-		"Italy",
-		"France",
-		"Germany",
-		"Luxemborg",
-		"America",
-		"Australia",
-		"Japan",
-		"Africa",
-		"Russia",
-		"California",
-		"New York",
-"Space", 
-		"Ireland"
-	],
-	"specialArea": [
-		"ancient Rome",
-		"Renaissance Italy",
-		"Edwardian England",
-		"America's Wild West",
-		"'50s New York",
-		"the outback",
-"Villaincon", 
-		"the streets",
-		"the North",
-		"high society",
-		"Pompeii",
-		"an Aztec metropolis",
-		"Napoleonic France",
-		"the roaring '20s",
-		"Atlantis"
-	],
-	"futureArea": [
-		"Earth's far future",
-		"the Martian colonies",
-		"the rings of Saturn",
-		"a dimension of pure crystal",
-		"another galaxy",
-		"the #alienWord.capitalize# moons",
-		"the #ordinal# planet of #alienWord.capitalize#",
-		"the #alienWord.capitalize# orbital",
-		"a planet-sized mall",
-		"the Planet of the Dead",
-		"the pleasure planet of #alienWord.capitalize#",
-		"a doomed asteroid",
-		"the #alienWord# mines of #alienWord.capitalize#"
-	],
-	"ordinal": [
-		"3rd",
-		"4th",
-		"5th",
-		"6th",
-		"7th",
-		"8th",
-		"9th",
-		"12th",
-		"last"
-	],
-	"alienWord": [
-		"#consonant.capitalize##vowel##consonantEnd##optAlienMod#",
-		"#vowel#'#vowel##consonantEnd##optAlienMod#",
-		"#consonant##vowel##vowel##optAlienMod#"
-	],
-	"consonant": [
-		"kr",
-		"pl",
-		"dv",
-		"st",
-		"bl"
-	],
-	"vowel": [
-		"i",
-		"ee",
-		"eh",
-		"oo",
-		"oh",
-		"uh",
-		"y"
-	],
-	"consonantEnd": [
-		"k",
-		"ck",
-		"t",
-		"d",
-		"g",
-		"z",
-		"m",
-		"n",
-		"pp"
-	],
-	"optAlienMod": [
-		"",
-		"",
-		" #alienMod#"
-	],
-	"alienMod": [
-		"Prime",
-		"2",
-		"Ascending",
-		"Matrix",
-		"Nova",
-		"#thrillerWord.capitalize#"
-	],
-	"touring": [
-		"visiting",
-		"crashing",
-		"studying",
-		"vacationing in",
-		"relaxing in",
-		"stuck in",
-		"detouring through",
-		"on a mission in",
-		"undercover in",
-		"passing through",
-		"investigating a mysterious signal in",
-		"accidentally in"
-	],
-	"reactToPlace": [
-		"confuses the locals",
-		"misunderstands the customs",
-		"says lots of anachronistic things",
-		"flirts with the Doctor",
-		"teases the Doctor",
-		"pretends to be annoyed with the Doctor",
-		"enjoys the local cuisine",
-		"brings up her ex-boyfriend",
-		"befriends a street urchin",
-		"adopts a stray cat",
-		"goes looking for adventure",
-		"pokes fun at the locals",
-		"complains about the detour",
-		"enjoys the scenery"
-	],
-	"hasPlaceProblem": [
-		"can't get anyone to understand her accent",
-		"is accosted by a creepy street preacher",
-		"steps in a mud puddle",
-		"locks herself out of the TARDIS",
-		"gets ripped off by a con artist",
-		"meets a mysterious woman in a shroud",
-		"is troubled by a strange statue",
-		"can't shake a strange feeling of dread",
-		"loses her phone",
-		"gets lost",
-		"#reactToPlace#"
-	],
-	"gettingIntoTrouble": [
-		"getting arrested",
-		"being kidnapped by #villains#",
-		"offending a powerful figure",
-		"running afoul of #villains#",
-		"walking right into a plot by #villains#"
-	],
-	"terribleSecret": [
-		"#villains# are planning an invasion",
-		"someone is stealing the children",
-		"something has drained the TARDIS's energy cells",
-		"#villains# are planning to open a portal to another universe",
-		"#villains# are living under the ground",
-		"#villains# are planning to kidnap him",
-		"#villains# are planning to get revenge",
-		"things are not what they seem",
-		"#villains# have enslaved the minds of nearly all the locals",
-		"#villains# have a plan to restart the Time War",
-		"#villains# and #villains# are working together"
-	],
-	"villains": [
-		"#classicVillains#",
-		"#proceduralAliens#",
-		"#proceduralAliens#"
-	],
-	"classicVillains": [
-		"the Daleks",
-		"the Daleks",
-		"the Cybermen",
-		"the Cybermen",
-		"Davros's #minions#",
-		"the Master's #minions#",
-		"the Dream Lords",
-		"the Fendahl",
-		"a trio of parallel universe Doctors turned evil",
-		"the Valeyard's #minions#",
-		"the Weeping Angels",
-		"Time Zombies",
-		"The Silence",
-		"the Ood",
-		"Plasmavores",
-		"the Sontarans",
-		"sentient mannequins"
-	],
-	"minions": [
-		"minions",
-		"henchmen",
-		"slaves",
-		"servants",
-		"clones",
-		"thugs",
-		"monsters",
-		"#alienAdj# things"
-	],
-	"proceduralAliens": [
-		"#alienAdj# #alienBaseType##optAlienModifier#"
-	],
-	"alienAdj": [
-		"slimy",
-		"oozey",
-		"invisible",
-		"half-reptile",
-		"hyperintelligent",
-		"blue",
-		"Venusian",
-		"super-fast",
-		"hairless",
-		"undead",
-		"de-phased",
-		"hideous",
-		"giant",
-		"bad CGI",
-		"razor-jawed",
-		"genetically altered"
-	],
-	"alienBaseType": [
-		"insect people",
-		"pigmen",
-		"robots",
-		"cyborgs",
-		"ratmen",
-		"aliens",
-		"ghosts",
-		"plant people",
-		"spiders",
-		"lawyers",
-		"brains",
-		"vampires",
-		"leech-things",
-		"land sharks",
-		"snake people",
-		"cat people",
-		"clones",
-		"zealots",
-		"psychics",
-		"shadows"
-	],
-	"optAlienModifier": [
-		"",
-		" #alienModifier#"
-	],
-	"alienModifier": [
-		"#mod1#",
-		"#mod1#",
-		"#mod1# (#workingwith# #villains#)"
-	],
-	"workingwith": [
-		"working with",
-		"sent by",
-		"in collusion with",
-		"enslaved by"
-	],
-	"mod1": [
-		"who live backwards in time",
-		"from the future",
-		"from the distant past",
-		"from a dying Earth",
-		"with a grudge",
-		"(the last of their race)",
-		"with no sense of morality",
-		"with no sense of humor",
-		"(not seen since the last season)",
-		"who crave only pain",
-		"who feed off the nightmares of children",
-		"who hate the human race",
-		"with disturbingly long teeth",
-		"distilled from nightmares",
-		"(escapees from a Time Prison)",
-		"with glowing red eyes",
-		"with no faces",
-		"with a death ray",
-		"with a supernova bomb"
-	],
-	"actionBeat": [
-		"run down some corridors",
-		"cleverly escape from a prison cell",
-		"get separated",
-		"enlist the help of a local #localperson#",
-		"recruit some local #localpeople#",
-		"are almost captured",
-		"narrowly escape a gruesome death"
-	],
-	"doctorSkill": [
-		"his wits",
-		"dashing good looks",
-		"his sonic screwdriver",
-		"his psychic link to the TARDIS",
-		"Gallifrean powers of self-control",
-		"his knowledge of quantum mathematics",
-		"his keen understanding of the human condition",
-		"math",
-		"his vast knowledge of alien psychology",
-		"something that looks like a gun at first but turns out not to be a gun",
-		"something not very well explained to do with love and psychic energy"
-	],
-	"mysteryThing": [
-		"#color.capitalize# #symbol.capitalize#",
-		"#evocativeWord#",
-		"#femaleFirstName# #thrillerWord#",
-		"#evocativeWord# #thrillerWord#"
-	],
-	"color": [
-		"red",
-		"blue",
-		"yellow",
-		"green",
-		"black",
-		"white"
-	],
-	"symbol": [
-		"square",
-		"star",
-		"sphere"
-	],
-	"evocativeWord": [
-		"Returning",
-		"Message",
-		"Pattern",
-		"Summoning",
-		"Destiny",
-		"Endgame",
-		"Nevertime",
-		"Oneness",
-		"Whisper",
-		"Death"
-	],
-	"thrillerWord": [
-		"Pardox",
-		"Parable",
-		"Quadrant",
-		"Element",
-		"Conundrum",
-		"Solution",
-		"Event",
-		"Conspiracy",
-		"Quorum",
-		"Diary",
-		"Intention",
-		"Secret",
-		"Identity",
-		"Concordance",
-		"Division",
-		"Incision",
-		"Countdown",
-		"#ordinal.capitalize#"
-	],
-	"localperson": [
-		"vicar",
-		"dog catcher",
-		"electrician",
-		"professor",
-		"historian",
-		"police officer",
-		"street artist",
-		"urchin",
-		"teenager",
-		"slacker",
-		"comic book fan",
-		"toymaker",
-		"street vendor"
-	],
-	"localpeople": [
-		"children",
-		"grad students",
-		"grandmothers",
-		"asylum inmates",
-		"paranormal investigators",
-		"police officers",
-		"bar patrons",
-		"artists",
-		"musicians",
-		"sports fans"
-	]
-
-}
+		"name": [
+			"Bertram",
+			"Arabella",
+			"Cecil",
+			"Edmund",
+			"Clifton",
+			"Bernard",
+			"Johnnie",
+			"Walter",
+			"Wesley",
+			"Howard",
+			"Matthew",
+			"Jack",
+			"Stephen",
+			"Ada",
+			"Estella",
+			"Gloria",
+			"Gayle",
+			"Jean",
+			"Helen",
+			"Jacqueline",
+			"Alicia",
+			"Alyssa",
+			"Chloe",
+			"Louis",
+			"Hayden",
+			"Peter",
+			"Riley",
+			"Bradley",
+			"Axton",
+			"Gerald",
+			"Karter",
+			"Kason",
+			"Alejandro",
+			"Layla",
+			"Elizabeth",
+			"Abigail",
+			"Georgina",
+			"Tori",
+			"Samiyah",
+			"Laurel",
+			"Kylee",
+			"Mariam"
+		],
+		"sense": [
+			"feel",
+			"see",
+			"visualize",
+			"hear",
+			"make out",
+			"touch",
+			"sense"
+		],
+		"meta_start": [
+			"the pixels",
+			"the worldbox",
+			"the graphics",
+			"a cyber-realm",
+			"the reality-distortions"
+		],
+		"adj": [
+			"all-encompassing",
+			"freightening",
+			"surreal",
+			"sublime",
+			"subliminal",
+			"novel",
+			"ostentatious",
+			"simulated",
+			"imitating",
+			"second",
+			"inverse",
+			"next"
+		],
+		"interaction": [
+			"walk",
+			"pan",
+			"move their head",
+			"teleport",
+			"point"
+		],
+		"action_channel": [
+			"gaze",
+			"gesture",
+			"head position",
+			"facial expression",
+			"voice",
+			"haptic feedback vest",
+			"electrodes"
+		],
+		"resp_adj": [
+			"disorienting",
+			"responsive",
+			"slower than they thought",
+			"faster than they thought",
+			"cumbersome",
+			"difficult to use",
+			"seamless",
+			"like another sense",
+			"natural",
+			"unnatural"
+		],
+		"channel_feedback": [
+			"Displays",
+			"Sounds",
+			"Voices",
+			"Forces",
+			"Smells"
+		],
+		"feel_desc": [
+			"change",
+			"oscillate",
+			"evolve",
+			"adapt",
+			"press",
+			"echo",
+			"brighten",
+			"darken",
+			"twist",
+			"reverberate",
+			"pierce",
+			"sing",
+			"harmonize",
+			"quake",
+			"invade",
+			"intrude"
+		],
+		"type_of_reality": [
+			"setting",
+			"viewscape",
+			"3D environment",
+			"virtual space",
+			"Avatar"
+		],
+		"vr_verbs": [
+			"discovers",
+			"rates",
+			"creates",
+			"explores",
+			"rules",
+			"hates",
+			"loves"
+		],
+		"vr_nouns": [
+			"landscapes",
+			"virtual museums",
+			"hangouts",
+			"NPCs",
+			"Avatars",
+			"quests",
+			"scenes"
+		],
+		"origin": [
+			"#name# enters the Metaverse. They #sense# #meta_start# as they escape to this #adj# reality. They #interaction# using their #action_channel#, its #resp_adj#. #channel_feedback# #feel_desc# their #type_of_reality#. Their friend, #name#, #vr_verbs# #vr_nouns# within virtual space..."
+		]
+	}
 function generateString(rule) {
   return expandRule(rule);
 }
