@@ -36,15 +36,31 @@ Here is my abstract.
 
 <div>
 <!-- HTML Block for Chatbots -->
-  <!-- Load Botpress Webchat library ONCE -->
+  <!-- Load Botpress webchat only once -->
   <script src="https://cdn.botpress.cloud/webchat/v3.3/inject.js"></script>
+
+  <!-- Each bot container -->
+  <div id="oneiros-container"></div>
+  <div id="logos-container"></div>
+  <div id="pathos-container"></div>
   
-  <!-- Oneiros, The Dreamer -->
-  <script src="https://files.bpcontent.cloud/2025/11/02/22/20251102223652-6ZTJIPYJ.js" defer></script>
+  <script>  
+    // Oneiros, The Dreamer
+    window.botpressWebChat.init({
+      clientId: "6ZTJIPYJ",
+      container: document.getElementById("oneiros-container")
+    });
   
-  <!-- Logos, The Analyst -->
-  <script src="https://files.bpcontent.cloud/2025/11/02/22/20251102223321-AIMIS500.js" defer></script>
+    // Logos, The Analyst
+    window.botpressWebChat.init({
+      clientId: "AIMIS500",
+      container: document.getElementById("logos-container")
+    });
   
-  <!-- Pathos, The Listener -->
-  <script src="https://files.bpcontent.cloud/2025/11/02/22/20251102223551-5OCHO3AU.js" defer></script>
+    // Pathos, The Listener
+    window.botpressWebChat.init({
+      clientId: "5OCHO3AU",
+      container: document.getElementById("pathos-container")
+    });
+  </script>
 </div>
