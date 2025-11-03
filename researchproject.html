@@ -9,7 +9,7 @@ title: Research Project
 <p>Testing Botpress embedding</p>
 
 <!-- Chatbot Container -->
-<div id="pathos-container" style="min-height: 600px;"></div>
+<div id="pathos-container" style="width: 100%; min-height: 600px; border: 1px solid #444;"></div>
 
 <h2>Abstract</h2>
 <p>Here is my abstract.</p>
@@ -34,6 +34,17 @@ title: Research Project
     document.head.appendChild(bp);
   })();
 </script>
+<style>
+  iframe[src*="botpress"] {
+    position: relative !important;
+    display: block !important;
+    width: 100% !important;
+    height: 600px !important;
+    z-index: 9999 !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+  }
+</style>
 
 <style>
   .works-cited {
