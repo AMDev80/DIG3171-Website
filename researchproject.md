@@ -59,7 +59,7 @@ Here is my abstract.
   
     // Pathos, The Listener
     window.botpressWebChat.init({
-      clientId: "5OCHO3AU",
+      clientId: "98f267cc-02dd-46a5-bedc-25b77ad07e1d",
       container: document.getElementById("pathos-container")
     });
   </script>
