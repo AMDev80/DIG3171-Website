@@ -33,3 +33,8 @@ Here is my abstract.
 <p class="works-cited">
   Doe, Jane. "Journal Article.” <em>Journal Name</em>, vol. 15, no. 2, 2025, pp. 45–67.
 </p>
+
+
+<script src="https://cdn.botpress.cloud/webchat/v3.3/inject.js"></script>
+<script src="https://files.bpcontent.cloud/2025/11/02/22/20251102223652-6ZTJIPYJ.js" defer></script>
+    
