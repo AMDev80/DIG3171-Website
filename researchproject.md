@@ -34,7 +34,14 @@ Here is my abstract.
   Doe, Jane. "Journal Article.” <em>Journal Name</em>, vol. 15, no. 2, 2025, pp. 45–67.
 </p>
 
-
+<!-- Oneiros, The Dreamer -->
 <script src="https://cdn.botpress.cloud/webchat/v3.3/inject.js"></script>
 <script src="https://files.bpcontent.cloud/2025/11/02/22/20251102223652-6ZTJIPYJ.js" defer></script>
-    
+
+<!-- Logos, The Analyst -->
+<script src="https://cdn.botpress.cloud/webchat/v3.3/inject.js"></script>
+<script src="https://files.bpcontent.cloud/2025/11/02/22/20251102223321-AIMIS500.js" defer></script>
+
+<!-- Pathos, The Listener -->
+<script src="https://cdn.botpress.cloud/webchat/v3.3/inject.js"></script>
+<script src="https://files.bpcontent.cloud/2025/11/02/22/20251102223551-5OCHO3AU.js" defer></script>
