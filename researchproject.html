@@ -2,67 +2,74 @@
 layout: default
 title: Research Project
 ---
+
 {% include nav.html %}
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <script src="https://cdn.botpress.cloud/webchat/v3.3/inject.js"></script>
-</head>
+<h1>My Final Research Project</h1>
+<p>embed here</p>
 
-<body>
-  <h1>My Final Research Project</h1>
-  <p>embed here</p>
+<h2>Abstract</h2>
+<p>Here is my abstract.</p>
 
-  <h2>Abstract</h2>
-  <p>Here is my abstract.</p>
+<!-- Botpress Chat Containers -->
 
-  <div class="chatbot-container">
-    <div id="oneiros-container" class="bot-box"></div>
-    <div id="logos-container" class="bot-box"></div>
-    <div id="pathos-container" class="bot-box"></div>
-  </div>
+<div id="oneiros-container"></div>
+<div id="logos-container"></div>
+<div id="pathos-container"></div>
 
-  {% raw %}
-  <script>
-    // Ensure this runs after the page fully loads
-    window.addEventListener("DOMContentLoaded", function () {
+<!-- Load Botpress once -->
+<script src="https://cdn.botpress.cloud/webchat/v3.3/inject.js"></script>
 
-      // Oneiros, The Dreamer
-      window.botpressWebChat.init({
-        clientId: "6ZTJIPYJ",
-        container: document.getElementById("oneiros-container"),
-      });
-
-      // Logos, The Analyst
-      window.botpressWebChat.init({
-        clientId: "AIMIS500",
-        container: document.getElementById("logos-container"),
-      });
-
-      // Pathos, The Listener
-      window.botpressWebChat.init({
-        clientId: "98f267cc-02dd-46a5-bedc-25b77ad07e1d",
-        container: document.getElementById("pathos-container"),
-      });
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    // Oneiros, The Dreamer
+    window.botpressWebChat.init({
+      clientId: "6ZTJIPYJ",
+      container: document.getElementById("oneiros-container"),
     });
-  </script>
-  {% endraw %}
 
-  <h2>Works Cited</h2>
-  <style>
-    .works-cited {
-      margin-left: 2em;
-      text-indent: -2em;
-      line-height: 1.5;
-    }
-  </style>
-  <p class="works-cited">
-    Owens, E. (2025). ‘It speaks to me in brain rot’: Theorising ‘brain rot’ as a genre of participation among teenagers. <em>New Media & Society</em>, 0(0). https://doi.org/10.1177/14614448251351527
-  </p>
-  <p class="works-cited">
-    Yousef, A. M. F., Alshamy, A., Tlili, A., & Metwally, A. H. S. (2025). Demystifying the New Dilemma of Brain Rot in the Digital Era: A Review. <em>Brain Sciences</em>, 15(3), 283. https://doi.org/10.3390/brainsci15030283
-  </p>
-</body>
-</html>
+    // Logos, The Analyst
+    window.botpressWebChat.init({
+      clientId: "AIMIS500",
+      container: document.getElementById("logos-container"),
+    });
+
+    // Pathos, The Listener
+    window.botpressWebChat.init({
+      clientId: "98f267cc-02dd-46a5-bedc-25b77ad07e1d",
+      container: document.getElementById("pathos-container"),
+    });
+  });
+</script>
+
+<h2>Works Cited</h2>
+<style>
+  .works-cited {
+    margin-left: 2em;
+    text-indent: -2em;
+    line-height: 1.5;
+  }
+  .chatbot-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  .bot-box {
+    flex: 1 1 300px;
+    min-height: 500px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+</style>
+<p class="works-cited">
+  Owens, E. (2025). ‘It speaks to me in brain rot’: Theorising ‘brain rot’ as a genre of participation among teenagers.
+  <em>New Media & Society</em>, 0(0).
+  https://doi.org/10.1177/14614448251351527
+</p>
+<p class="works-cited">
+  Yousef, A. M. F., Alshamy, A., Tlili, A., & Metwally, A. H. S. (2025). Demystifying the New Dilemma of Brain Rot in the Digital Era: A Review.
+  <em>Brain Sciences</em>, 15(3), 283.
+  https://doi.org/10.3390/brainsci15030283
+</p>
